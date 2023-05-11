@@ -1,0 +1,14 @@
+version: "3.8"  # Specify the Docker Compose file version
+
+services:  # Define the services that make up the app
+  app:  # Define the app service
+    build: .  # Build the Docker image from the current directory
+    image: ahmedkhaleda/user-friendly-crud  # Name the Docker image
+    container_name: user-friendly-crud-container  # Name the Docker container
+    ports:
+      - "5200:5200"  # Map host port 5200 to container port 5200
+    environment:  # Set environment variables
+      - NODE_ENV=production
+    volumes:
+      - ./data:/data  # Mount the data directory to the container's /data directory
+    restart: always  # Restart the container automatically if it crashes or is stopped
