@@ -42,3 +42,6 @@ $ docker run 5200:5200 ahmedkhaleda/user-friendly-crud
 
 // To stop the container
 $ docker stop CONTAINER_NAME
+
+// Using the docker-compose.yml you can run the app and run it in the background
+$ docker compose up -d
