@@ -38,7 +38,7 @@ $ docker build -t ahmedkhaleda/user-friendly-crud .
 // To start the container
 $ docker run 5200:5200 ahmedkhaleda/user-friendly-crud
 
-// Use http://localhost:5200/persons in the URL to open the app 
+// Use http://localhost:5200 in the URL to open the app 
 
 // To stop the container
 $ docker stop CONTAINER_NAME
